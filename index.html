@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="icon" type="image/jpg" href="log.jpg">
+    <title>CHECK LIST PF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Logo.png" alt="Logomarca Vortex Energia Solar" class="img-responsive logo">
+        <h3>CHECK LIST PESSOA FÍSICA</h3>
+        <form id="pessoaFisicaForm" action="https://api.sheetmonkey.io/form/sz8cubtiwnUbKp7NzNkCgH" method="post">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <p class="text">CPF</p>
+                <input type="text" name="CPF" id="cpf" pattern="\d*" placeholder="" class="input">
+                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">TELEFONE CELULAR</p>
+                <input type="tel" name="TELEFONE CELULAR" id="telCelular" class="input" placeholder="" pattern="\d*">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">NOME COMPLETO</p>
+                <input type="text" name="NOME" id="nome" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">DATA DE NASCIMENTO</p>
+                <input type="date" name="DATA DE NASCIMENTO" id="datan" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">NATURALIDADE/UF</p>
+                <input type="text" name="NATURALIDADE/UF" id="nacionalidade" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">RG</p>
+                <input type="text" name="RG" id="rg" pattern="\d*" placeholder="" class="input">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">ESTADO EMISSOR (RG)</p>
+                <input type="text" name="ESTADO EMISSOR" id="edtadoEmissor" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">DATA DE EXPEDIÇAO</p>
+                <input type="date" name="DATA DE EXPEDICAO" id="dataExpedicao"  class="input">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <p class="text">NOME DA MÃE</p>
+                <input type="text" name="NOME DA MAE" id="nomeMae" placeholder="" class="input">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">PATRIMÔNIO R$</p>
+                <input type="text" name="PATRIMONIO" id="patrimonio" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">RENDA MENSAL R$</p>
+                <input type="text" name="RENDA MENSAL" id="rendaMensal" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">E-MAIL PESSOAL</p>
+                <input type="email" name="EMAIL PESSOAL" id="emailP" class="input" placeholder="exemplo@gmail.com">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">NATUREZA DA OCUPAÇÃO</p>
+                <select name="NATUREZA" id="natureza" class="input">
+                    <option value="">SELECIONE UMA OPÇÃO</option>
+                    <option value="APOSENTADO">APOSENTADO OU PENSIONISTA</option>
+                    <option value="ASSALARIADO">ASSALARIADO</option>
+                    <option value="AUTONOMO">AUTONOMO</option>
+                    <option value="EMPRESÁRIO">EMPRESÁRIO</option>
+                    <option value="FUNCIONÁRIO PÚBLICO">FUNCIONÁRIO PÚBLICO</option>
+                    <option value="LIBERAL">LIBERAL</option>
+                </select>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">PROFISSÃO</p>
+                <input type="text" name="PROFISSAO" id="profissao" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">HÁ QUANTO TEMPO ESTÁ NA EMPRESA?</p>
+                <input type="text" name="TEMPO DE EMPRESA" id="tempoEmpresa" class="input" placeholder="2 anos e 5 meses">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">BANCO</p>
+                <input type="text" name="BANCO" id="banco" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">AGÊNCIA</p>
+                <input type="text" name="AGENCIA" id="agencia" class="input" placeholder="" pattern="\d*">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">CONTA</p>
+                <input type="text" name="CONTA" id="conta" class="input" placeholder="" pattern="\d*">
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 line"><span class="tex">INFORMAÇÕES RESIDENCIAIS</span></div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">CIDADE</p>
+                <input type="text" name="CIDADE PESSOAL" id="cidadeP" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">UF</p>
+                <input type="text" name="UF PESSOAL" id="ufP" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">CEP</p>
+                <input type="text" name="CEP" id="cep" class="input" pattern="\d*" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">ENDEREÇO</p>
+                <input type="text" name="ENDERECO PESSOAL" id="enderecoP" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">N°</p>
+                <input type="text" name="NUMERO DA CASA" id="numeroP" pattern="\d*" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">BAIRRO</p>
+                <input type="text" name="BAIRRO PESSOAL" id="bairroP" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">COMPLEMENTO</p>
+                <input type="text" name="COMPLEMENTO PESSOAL" id="complementoP" class="input" placeholder="">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">SITUAÇÃO DO IMÓVEL</p>
+                <select name="SITUACAO DO IMOVEL" id="situacaoImovel" class="input">
+                    <option value="">SELECIONE UMA OPÇÃO</option>
+                    <option value="ALUGADO">ALUGADO</option>
+                    <option value="CEDIDO">CEDIDO</option>
+                    <option value="FAMILIAR">FAMILIAR</option>
+                    <option value="PRÓPRIO">PRÓPRIO</option>
+                    <option value="PRÓPRIO FINANCIADO">PRÓPRIO FINANCIADO</option>
+                </select>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">OBS</p>
+                
+                <textarea name="OBS" id="obs" cols="40" rows="5" class="input"></textarea>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 line"><span class="tex">TROCA DE TIRULARIDADE</span></div>
+            <div class="col-lg-4 col-md-4 col-sm-6"">
+                <p class="text">SERÁ FEITA UMA TROCA DE TIRULADIRADE?</p>
+                <select name="TROCA DE TITULADIRADE" id="TITULARIDADE" class="input">
+                    <option value="">SELECIONE UMA OPÇÃO</option>
+                    <option value="SIM">SIM</option>
+                    <option value="NÃO">NÃO</option>
+                </select>            
+            </div>
+
+            
+            <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+        
+                <button type="submit"  style=" font-family: 'Montserrat', sans-serif; cursor: pointer; " class="btn btn-warning">Enviar</button>
+                <br>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 line"><span class="tex">DOCUMENTAÇÃO NECESSÁRIA: </span> 
+                <ul>
+                    
+                    <li>Cópia do RG</li>
+                    <li>Cópia do CPF</li>
+                    <li>Cópia do CNH</li>
+                    <li>Cópia do comprovante de renda</li>
+                    <li>Cópia do comprovante de residência do local de instalação</li>
+            
+                </ul></div>
+        </form>
+        
+    </div>
+</body>
+</html>
